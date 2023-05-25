@@ -36,7 +36,7 @@ struct ContentView: View {
                 
                 ForEach(0..<rows) { row in
                     ForEach(0..<columns) { column in
-                            TileView(tile: tiles[row][column], size: tileSize)
+                            Tile(tile: tiles[row][column], size: tileSize)
                             .position(
                                 x: tileSize/2 + CGFloat(column) * tileSize,
                                 y: tileSize/2 + CGFloat(row) * tileSize
